@@ -1,51 +1,105 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import { makeStyles } from '@mui/styles';
-import Title from '../../atoms/Title';
-import Author from '../../atoms/Author';
-import Timer from '../../molecules/ReadTime';
-import More from '../../atoms/MoreHorizIcon';
-import Scroll from '../../atoms/ProgressBar';
+/* eslint-disable @typescript-eslint/ban-types */
+/* eslint-disable react/require-default-props */
+import * as React from "react";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Grid,
+  SxProps,
+  Typography,
+} from "@mui/material";
+import Timer from "../../molecules/ReadTime";
+import More from "../../atoms/MoreHorizIcon";
+import ProgressBar from "../../atoms/ProgressBar";
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-    height: 466,
-    width: 284,
-    position: 'absolute',
-    boxSizing: 'border-box',
-    background: '#FFFFFF',
-    left: '40%',
-    right: 0,
-    top: 50,
-    bottom: 0,
-  },
-  imageStyles: {
-    height: 292,
-    width: 294.1,
-    left: 0,
-    top: 0,
-  },
-});
+interface BookCardProps {
+  imagePath: string;
+  title?: string;
+  author?: string;
+  readTime?: string;
+  owned?: boolean;
+  onClick: Function;
+  percentComplete?: number;
+}
 
-export default function BookCard() {
-  const classes = useStyles();
+function BookCard({
+  imagePath,
+  title,
+  author,
+  readTime,
+  owned,
+  onClick,
+  percentComplete,
+}: BookCardProps) {
+  const ButtonStyling: SxProps = {
+    position: "relative",
+    top: "10px",
+    width: "100%",
+    height: "11%",
+    color: "secondary.main",
+    borderColor: "#e1ecfc",
+    "&:hover": {
+      backgroundColor: "secondary.main",
+      alignItems: "center",
+      color: "white",
+      path: {
+        fill: "white",
+      },
+    },
+  };
+
+  const CardContentStyling: SxProps = {
+    display: "flex",
+    flexDirection: "column",
+    margin: 0,
+    padding: 0,
+  };
   return (
-    <Card className={classes.root} sx={{ borderRadius: 3 }}>
+    <Card sx={{ height: "466px", width: "284px" }}>
       <CardMedia
-        className={classes.imageStyles}
         component="img"
-        image="/assets/img1.png"
+        src={imagePath}
+        alt="Book Image"
+        height="282px"
       />
-      <CardContent>
-        <Title />
-        <Author />
-        <Timer />
-        <More />
+      <CardContent sx={CardContentStyling}>
+        <Grid container direction="column" padding="0" margin="0">
+          <Typography variant="subtitle2" margin="5% 0px 0px">
+            {title}
+          </Typography>
+          <Typography
+            variant="body1"
+            paddingTop="5%"
+            sx={{ color: "textColors.textColor3" }}
+          >
+            {author}
+          </Typography>
+          <Grid
+            container
+            justifyContent="space-between"
+            alignContent="start"
+            paddingTop="5%"
+          >
+            <Grid item xs={7.5}>
+              <Timer />
+            </Grid>
+            <Grid
+              container
+              justifyContent="end"
+              marginRight="5%"
+              marginTop="5%"
+            >
+              <More />
+            </Grid>
+          </Grid>
+        </Grid>
       </CardContent>
-      <Scroll />
+      <Grid container padding="0px" top="15px" position="relative">
+        <ProgressBar percentComplete={percentComplete} />
+      </Grid>
     </Card>
   );
 }
+
+export default BookCard;
