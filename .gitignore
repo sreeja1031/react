@@ -25,3 +25,5 @@ yarn-error.log*
 
 storybook-static
 Form.tsx
+PostList.tsx
+
