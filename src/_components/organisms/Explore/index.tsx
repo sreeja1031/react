@@ -41,7 +41,7 @@ const headings = (
     </Grid>
     <Grid item xs>
       <Typography variant="body1" color="textColors.textColor3">
-        See popular titles
+        See popular titles xyz
       </Typography>
     </Grid>
   </Grid>
