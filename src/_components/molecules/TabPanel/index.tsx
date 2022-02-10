@@ -22,7 +22,7 @@ interface BookType {
 }
 
 const TabPanel: React.FC<TabPanelProps> = ({ value }) => {
-  const landingBooks = require("../../../../../server-api/db.json");
+  const landingBooks = require("../../../db.json");
   const books: BookType[] = landingBooks.landingBooks;
   return (
     <Box display={value === 0 ? "block" : "none"}>
