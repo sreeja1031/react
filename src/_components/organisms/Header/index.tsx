@@ -38,7 +38,7 @@ const Header: React.FC = () => (
         <NavItems title="My Library" />
       </Grid>
       <Grid item>
-        <CustomAvatar letter="A" />
+        <CustomAvatar />
       </Grid>
     </Grid>
   </header>
