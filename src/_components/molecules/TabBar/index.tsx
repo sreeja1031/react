@@ -14,7 +14,6 @@ const TabBar: React.FC = () => {
     alignItems: "flex-start",
     padding: "0",
     margin: "0",
-    textTransform: "none",
     fontSize: "18px",
   };
   return (

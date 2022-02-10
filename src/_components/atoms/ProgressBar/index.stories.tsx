@@ -1,8 +1,8 @@
-import React from 'react';
-import Scroll from '.';
+import React from "react";
+import Scroll from ".";
 
 export default {
-  title: 'Components/Atoms',
+  title: "Components/Atoms",
   component: Scroll,
 };
 

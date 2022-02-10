@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-newline */
 import React from "react";
 import { Box, Divider, Grid, Typography, Button } from "@mui/material";
 import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";

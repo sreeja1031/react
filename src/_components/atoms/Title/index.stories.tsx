@@ -1,8 +1,8 @@
-import React from 'react';
-import Title from '.';
+import React from "react";
+import Title from ".";
 
 export default {
-  title: 'Components/Atoms',
+  title: "Components/Atoms",
   component: Title,
 };
 

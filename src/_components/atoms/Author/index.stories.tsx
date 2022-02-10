@@ -1,8 +1,8 @@
-import React from 'react';
-import Author from '.';
+import React from "react";
+import Author from ".";
 
 export default {
-  title: 'Components/Atoms',
+  title: "Components/Atoms",
   component: Author,
 };
 
