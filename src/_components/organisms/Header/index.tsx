@@ -1,12 +1,17 @@
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/function-component-definition */
 import Grid from "@mui/material/Grid";
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import CustomAvatar from "../../atoms/Avatar";
 import Image from "../../atoms/Image";
 import NavItems from "../../molecules/NavLinks";
 
-const Header: React.FC = () => (
+interface HeaderProps {
+  isDrawerOpen?: boolean;
+  onClickExplore?: MouseEventHandler;
+}
+
+const Header: React.FC<HeaderProps> = ({ isDrawerOpen, onClickExplore }) => (
   <header>
     <Grid container sx={{ padding: "23px 17% 0px" }}>
       <Grid item sx={{ marginRight: "42px" }}>
@@ -32,7 +37,12 @@ const Header: React.FC = () => (
         </svg>
       </Grid>
       <Grid item sx={{ marginRight: "42px" }}>
-        <NavItems title="Explore" dropdown />
+        <NavItems
+          title="Explore"
+          dropdown
+          isDrawerOpen={isDrawerOpen}
+          onClick={onClickExplore}
+        />
       </Grid>
       <Grid item marginRight="50%">
         <NavItems title="My Library" />

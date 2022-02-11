@@ -2,17 +2,13 @@
 /* eslint-disable react/function-component-definition */
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-import Header from "../organisms/Header";
 import FooterComponent from "../organisms/Footer";
 import TabBar from "../molecules/TabBar";
 
 const LandingPage: React.FC = () => {
   return (
     <Grid container direction="column">
-      <Grid item>
-        <Header />
-      </Grid>
-      <Grid item>
+      <Grid item marginTop="59px">
         <Grid container direction="column">
           <Grid item>
             <Typography variant="h1" sx={{ marginLeft: "18%" }}>
