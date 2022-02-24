@@ -7,7 +7,7 @@ import Header from "./_components/organisms/Header";
 import LandingPage from "./_components/pages/LandingPage";
 import BookDetailsPage from "./_components/pages/BookDetailsPage";
 import ExploreMenu from "./_components/organisms/Explore";
-import EntrePage from "./_components/pages/EntrepreurshipPage";
+import EntrePage from "./_components/pages/EntrePage";
 
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
