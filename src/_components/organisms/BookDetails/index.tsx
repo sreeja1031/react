@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable global-require */
 /* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/function-component-definition */
@@ -12,9 +14,13 @@ import {
   Typography,
 } from "@mui/material";
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useDispatch } from "react-redux";
 import ButtonGrid from "../../molecules/ButtonGrid";
-import Timer from "../../molecules/ReadTime";
+import ReadTime from "../../molecules/ReadTime";
 import Image from "../../atoms/Image";
+import { AddToFinish } from "../../../actions/AddToFinish";
 
 const cssRules = {
   width: "200px",
@@ -28,7 +34,25 @@ const BookDetails: React.FC = () => {
   const BoxStyling: SxProps = {
     margin: "1% 10% 0% 17.5%",
   };
-
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const onClick = () => {
+    console.log("finish clicked");
+    navigate("/");
+    const categories = require("../../../../db.json").entrePage;
+    const bookInfo = categories["Trending Blinks"][1];
+    const book = {
+      title: bookInfo.title,
+      reads: bookInfo.reads,
+      readTime: bookInfo.readTime,
+      author: bookInfo.author,
+      imagePath: bookInfo.imagePath,
+      owned: true,
+      id: bookInfo.title,
+    };
+    axios.post("http://localhost:3006/finished", book);
+    dispatch(AddToFinish());
+  };
   return (
     <Box sx={BoxStyling}>
       <Grid container>
@@ -50,8 +74,8 @@ const BookDetails: React.FC = () => {
             >
               By Jim Collins and Bill Lazier
             </Typography>
-            <Timer />
-            <ButtonGrid />
+            <ReadTime time="15" />
+            <ButtonGrid onClick={onClick} />
           </Stack>
         </Grid>
         <Grid item xs margin="40px 0px 0px 180px">

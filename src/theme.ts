@@ -140,7 +140,7 @@ const theme = createTheme({
     body1: {
       fontSize: "16px",
       lineHeight: "24px",
-      fontWeight: "bold",
+      fontWeight: 500,
     },
     body2: {
       fontSize: "16px",

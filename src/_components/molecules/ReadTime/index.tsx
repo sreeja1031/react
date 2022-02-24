@@ -1,3 +1,5 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/function-component-definition */
 import React from "react";
 import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
@@ -19,12 +21,21 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Timer() {
+interface ReadTimeProps {
+  time?: string;
+}
+
+const ReadTime: React.FC<ReadTimeProps> = ({ time }) => {
   const classes = useStyles();
   return (
     <Typography className={classes.timeStyles}>
       <AccessTimeIcon />
-      <Typography sx={{ paddingLeft: "8px" }}>15-minute read</Typography>
+      <Typography sx={{ paddingLeft: "8px" }}>
+        {time}
+        -minute read
+      </Typography>
     </Typography>
   );
-}
+};
+
+export default ReadTime;

@@ -28,8 +28,8 @@ const CategoryBookList: React.FC<CategoryBookListProps> = ({
     margin: "5% 18.5% 5% 18.5%",
     padding: " 0%",
   };
-  const OnClick = (bookTitle: string) => {
-    navigator(`/bookView/${bookTitle}`);
+  const OnClick = () => {
+    navigator("/bookDetails");
   };
   return (
     <Box sx={boxStyling}>

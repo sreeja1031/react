@@ -1,6 +1,5 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import Typography from "@mui/material/Typography";
 import styled from "@emotion/styled";
 
 interface ProgressBarProps {

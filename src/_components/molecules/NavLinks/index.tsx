@@ -28,6 +28,7 @@ const NavItems: React.FC<NavItemsProps> = ({
     userSelect: "none",
     ":hover": {
       cursor: dropdown === true ? "pointer" : "auto",
+      borderBottom: "1px solid #22C870",
     },
   });
   const arrowIcon =
