@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Avatar/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="57"/>
+    <testCase name="Unit Test - Avatar" duration="59"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookCard/index.test.tsx">
-    <testCase name="Unit Test - Book Card" duration="266"/>
+    <testCase name="Unit Test - Book Card" duration="302"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Header/index.test.tsx">
+    <testCase name="should Display Navbar" duration="86"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookDetails/index.test.tsx">
+    <testCase name="should display Book Details" duration="316"/>
   </file>
 </testExecutions>

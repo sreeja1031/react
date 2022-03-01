@@ -12,7 +12,7 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ isDrawerOpen, onClickExplore }) => (
-  <header>
+  <header data-testid="header">
     <Grid container sx={{ padding: "23px 17% 0px" }}>
       <Grid item sx={{ marginRight: "42px" }}>
         <Image
