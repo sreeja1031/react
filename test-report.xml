@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Avatar/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="56"/>
+    <testCase name="Unit Test - Avatar" duration="57"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookCard/index.test.tsx">
-    <testCase name="Unit Test - Book Card" duration="263"/>
+    <testCase name="Unit Test - Book Card" duration="266"/>
   </file>
 </testExecutions>
