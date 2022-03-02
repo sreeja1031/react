@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1646197059323" clover="3.2.0">
-  <project timestamp="1646197059323" name="All files">
+<coverage generated="1646198297708" clover="3.2.0">
+  <project timestamp="1646198297708" name="All files">
     <metrics statements="168" coveredstatements="95" conditionals="45" coveredconditionals="32" methods="54" coveredmethods="28" elements="267" coveredelements="155" complexity="0" loc="168" ncloc="168" packages="23" files="42" classes="42"/>
     <package name="src">
       <metrics statements="16" coveredstatements="4" conditionals="6" coveredconditionals="1" methods="4" coveredmethods="1"/>
@@ -60,7 +60,7 @@
       </file>
       <file name="index.tsx" path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Image/index.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="6" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
       </file>
     </package>
     <package name="src._components.atoms.MoreHorizIcon">

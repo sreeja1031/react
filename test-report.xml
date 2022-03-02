@@ -1,53 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Banner/index.test.tsx">
-    <testCase name="should Render Banner" duration="142"/>
+    <testCase name="should Render Banner" duration="124"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Avatar/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="85"/>
-  </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Footer/index.test.tsx">
-    <testCase name="&lt;Footer&gt; check if it is present" duration="235"/>
-    <testCase name="&lt;Footer&gt; check if it is truthy" duration="39"/>
+    <testCase name="Unit Test - Avatar" duration="93"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Header/index.test.tsx">
-    <testCase name="should Display Navbar" duration="139"/>
+    <testCase name="should Display Navbar" duration="137"/>
   </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/ProgressBar/index.test.tsx">
-    <testCase name="Unit Test - Progress Bar" duration="45"/>
-  </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookCard/index.test.tsx">
-    <testCase name="Unit Test - Book Card" duration="565"/>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Footer/index.test.tsx">
+    <testCase name="&lt;Footer&gt; check if it is present" duration="204"/>
+    <testCase name="&lt;Footer&gt; check if it is truthy" duration="44"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/NavLinks/index.test.tsx">
-    <testCase name="should display NavItems and also Demonstrate OnClick" duration="74"/>
-    <testCase name="Should display a navitem with arrow icon" duration="26"/>
+    <testCase name="should display NavItems and also Demonstrate OnClick" duration="58"/>
+    <testCase name="Should display a navitem with arrow icon" duration="33"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Image/index.test.tsx">
+    <testCase name="Unit Test - Image Component" duration="138"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/TabBar/index.test.tsx">
-    <testCase name="should Display Tab Bar" duration="875"/>
-  </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ReadTime/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="113"/>
-  </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/SearchBar/index.test.tsx">
-    <testCase name="should display Search Bar" duration="97"/>
+    <testCase name="should Display Tab Bar" duration="865"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/TabPanel/index.test.tsx">
-    <testCase name="should display Books" duration="706"/>
+    <testCase name="should display Books" duration="722"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ReadTime/index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="140"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookCard/index.test.tsx">
+    <testCase name="Unit Test - Book Card" duration="542"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/CategoryBookList/index.test.tsx">
-    <testCase name="Unit Test - Category Book list" duration="638"/>
+    <testCase name="Unit Test - Category Book list" duration="843"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/SearchBar/index.test.tsx">
+    <testCase name="should display Search Bar" duration="67"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/ProgressBar/index.test.tsx">
+    <testCase name="Unit Test - Progress Bar" duration="42"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ReaderCount/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="101"/>
+    <testCase name="Unit Test - Avatar" duration="72"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ButtonGrid/index.test.tsx">
-    <testCase name="should Generate 3 Buttons - Unit Test" duration="318"/>
+    <testCase name="should Generate 3 Buttons - Unit Test" duration="336"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookDetails/index.test.tsx">
-    <testCase name="should display Book Details" duration="307"/>
+    <testCase name="should display Book Details" duration="415"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/App.test.tsx">
-    <testCase name="should Display App" duration="489"/>
+    <testCase name="should Display App" duration="533"/>
   </file>
 </testExecutions>
