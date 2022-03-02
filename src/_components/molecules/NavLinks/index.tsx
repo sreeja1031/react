@@ -33,9 +33,9 @@ const NavItems: React.FC<NavItemsProps> = ({
   });
   const arrowIcon =
     isDrawerOpen === true ? (
-      <KeyboardArrowUpIcon fontSize="small" />
+      <KeyboardArrowUpIcon fontSize="small" data-testid="icon" />
     ) : (
-      <KeyboardArrowDownIcon fontSize="small" />
+      <KeyboardArrowDownIcon fontSize="small" data-testid="icon" />
     );
   const showArrowIcon = dropdown === true ? arrowIcon : null;
   return (

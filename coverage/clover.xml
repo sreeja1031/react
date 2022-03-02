@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1646196066456" clover="3.2.0">
-  <project timestamp="1646196066456" name="All files">
-    <metrics statements="168" coveredstatements="95" conditionals="45" coveredconditionals="30" methods="54" coveredmethods="28" elements="267" coveredelements="153" complexity="0" loc="168" ncloc="168" packages="23" files="42" classes="42"/>
+<coverage generated="1646197059323" clover="3.2.0">
+  <project timestamp="1646197059323" name="All files">
+    <metrics statements="168" coveredstatements="95" conditionals="45" coveredconditionals="32" methods="54" coveredmethods="28" elements="267" coveredelements="155" complexity="0" loc="168" ncloc="168" packages="23" files="42" classes="42"/>
     <package name="src">
       <metrics statements="16" coveredstatements="4" conditionals="6" coveredconditionals="1" methods="4" coveredmethods="1"/>
       <file name="App.tsx" path="/home/sreejan/Desktop/React/my-app/src/App.tsx">
@@ -75,18 +75,18 @@
       </file>
     </package>
     <package name="src._components.atoms.ProgressBar">
-      <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="index.stories.tsx" path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/ProgressBar/index.stories.tsx">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="9" count="0" type="stmt"/>
       </file>
       <file name="index.tsx" path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/ProgressBar/index.tsx">
-        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="10" count="37" type="stmt"/>
-        <line num="19" count="37" type="cond" truecount="2" falsecount="2"/>
-        <line num="22" count="37" type="stmt"/>
-        <line num="29" count="37" type="stmt"/>
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="38" type="stmt"/>
+        <line num="19" count="38" type="cond" truecount="4" falsecount="0"/>
+        <line num="22" count="38" type="stmt"/>
+        <line num="29" count="38" type="stmt"/>
       </file>
     </package>
     <package name="src._components.molecules.ButtonGrid">
@@ -136,11 +136,11 @@
       </file>
       <file name="index.tsx" path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/NavLinks/index.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="8" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="35" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="40" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="41" count="4" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="35" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="40" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="6" type="stmt"/>
       </file>
     </package>
     <package name="src._components.molecules.ReadTime">
@@ -151,21 +151,21 @@
       </file>
       <file name="index.tsx" path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ReadTime/index.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="8" count="6" type="stmt"/>
-        <line num="28" count="6" type="stmt"/>
-        <line num="29" count="39" type="stmt"/>
-        <line num="30" count="39" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="40" type="stmt"/>
+        <line num="30" count="40" type="stmt"/>
       </file>
     </package>
     <package name="src._components.molecules.ReaderCount">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ReaderCount/index.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="44" count="5" type="stmt"/>
-        <line num="45" count="19" type="stmt"/>
-        <line num="46" count="19" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="45" count="20" type="stmt"/>
+        <line num="46" count="20" type="stmt"/>
       </file>
     </package>
     <package name="src._components.molecules.SearchBar">

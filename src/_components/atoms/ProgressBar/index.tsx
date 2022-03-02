@@ -27,8 +27,8 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentComplete }) => {
     backgroundColor: "#E1ECFC",
   });
   return (
-    <StyledDiv>
-      <InnerDiv />
+    <StyledDiv data-testid="div">
+      <InnerDiv data-testid="div" />
     </StyledDiv>
   );
 };

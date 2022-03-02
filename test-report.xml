@@ -1,40 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Avatar/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="95"/>
-  </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Banner/index.test.tsx">
-    <testCase name="should Render Banner" duration="149"/>
+    <testCase name="should Render Banner" duration="142"/>
   </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Header/index.test.tsx">
-    <testCase name="should Display Navbar" duration="158"/>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Avatar/index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="85"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Footer/index.test.tsx">
-    <testCase name="&lt;Footer&gt; check if it is present" duration="224"/>
-    <testCase name="&lt;Footer&gt; check if it is truthy" duration="53"/>
+    <testCase name="&lt;Footer&gt; check if it is present" duration="235"/>
+    <testCase name="&lt;Footer&gt; check if it is truthy" duration="39"/>
   </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/TabPanel/index.test.tsx">
-    <testCase name="should display Books" duration="822"/>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Header/index.test.tsx">
+    <testCase name="should Display Navbar" duration="139"/>
   </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/CategoryBookList/index.test.tsx">
-    <testCase name="Unit Test - Category Book list" duration="818"/>
-  </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/TabBar/index.test.tsx">
-    <testCase name="should Display Tab Bar" duration="987"/>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/ProgressBar/index.test.tsx">
+    <testCase name="Unit Test - Progress Bar" duration="45"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookCard/index.test.tsx">
-    <testCase name="Unit Test - Book Card" duration="442"/>
+    <testCase name="Unit Test - Book Card" duration="565"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/NavLinks/index.test.tsx">
+    <testCase name="should display NavItems and also Demonstrate OnClick" duration="74"/>
+    <testCase name="Should display a navitem with arrow icon" duration="26"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/TabBar/index.test.tsx">
+    <testCase name="should Display Tab Bar" duration="875"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ReadTime/index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="113"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/SearchBar/index.test.tsx">
-    <testCase name="should display Search Bar" duration="44"/>
+    <testCase name="should display Search Bar" duration="97"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/TabPanel/index.test.tsx">
+    <testCase name="should display Books" duration="706"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/CategoryBookList/index.test.tsx">
+    <testCase name="Unit Test - Category Book list" duration="638"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ReaderCount/index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="101"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ButtonGrid/index.test.tsx">
-    <testCase name="should Generate 3 Buttons - Unit Test" duration="325"/>
+    <testCase name="should Generate 3 Buttons - Unit Test" duration="318"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookDetails/index.test.tsx">
-    <testCase name="should display Book Details" duration="381"/>
+    <testCase name="should display Book Details" duration="307"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/App.test.tsx">
-    <testCase name="should Display App" duration="575"/>
+    <testCase name="should Display App" duration="489"/>
   </file>
 </testExecutions>
