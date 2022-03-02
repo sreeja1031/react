@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Header/index.test.tsx">
-    <testCase name="should Display Navbar" duration="129"/>
-  </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Avatar/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="79"/>
-  </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookCard/index.test.tsx">
-    <testCase name="Unit Test - Book Card" duration="434"/>
+    <testCase name="Unit Test - Avatar" duration="95"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Banner/index.test.tsx">
-    <testCase name="should Render Banner" duration="105"/>
+    <testCase name="should Render Banner" duration="149"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Header/index.test.tsx">
+    <testCase name="should Display Navbar" duration="158"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Footer/index.test.tsx">
-    <testCase name="&lt;Footer&gt; check if it is present" duration="129"/>
-    <testCase name="&lt;Footer&gt; check if it is truthy" duration="29"/>
+    <testCase name="&lt;Footer&gt; check if it is present" duration="224"/>
+    <testCase name="&lt;Footer&gt; check if it is truthy" duration="53"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/TabPanel/index.test.tsx">
+    <testCase name="should display Books" duration="822"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/CategoryBookList/index.test.tsx">
+    <testCase name="Unit Test - Category Book list" duration="818"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/TabBar/index.test.tsx">
+    <testCase name="should Display Tab Bar" duration="987"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookCard/index.test.tsx">
+    <testCase name="Unit Test - Book Card" duration="442"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/SearchBar/index.test.tsx">
+    <testCase name="should display Search Bar" duration="44"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/molecules/ButtonGrid/index.test.tsx">
+    <testCase name="should Generate 3 Buttons - Unit Test" duration="325"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookDetails/index.test.tsx">
-    <testCase name="should display Book Details" duration="313"/>
+    <testCase name="should display Book Details" duration="381"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/App.test.tsx">
-    <testCase name="should Display App" duration="528"/>
+    <testCase name="should Display App" duration="575"/>
   </file>
 </testExecutions>

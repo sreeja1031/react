@@ -85,6 +85,7 @@ function BookCard({
           backgroundColor: "#F1F6F4;",
         },
       }}
+      data-testid="bookCard"
     >
       <CardMedia
         component="img"
