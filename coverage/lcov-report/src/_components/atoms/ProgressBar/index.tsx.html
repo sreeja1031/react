@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>2/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -106,8 +106,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -116,17 +116,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -141,8 +141,8 @@ interface ProgressBarProps {
   percentComplete?: number;
 }
 // eslint-disable-next-line react/function-component-definition
-const ProgressBar: React.FC&lt;ProgressBarProps&gt; = <span class="fstat-no" title="function not covered" >({</span> percentComplete }) =&gt; {
-  const StyledDiv = <span class="cstat-no" title="statement not covered" >styled("div")({</span>
+const ProgressBar: React.FC&lt;ProgressBarProps&gt; = ({ percentComplete }) =&gt; {
+  const StyledDiv = styled("div")({
     width: "100%",
     height: "15px",
     backgroundColor: "#f1f6f4",
@@ -151,17 +151,17 @@ const ProgressBar: React.FC&lt;ProgressBarProps&gt; = <span class="fstat-no" tit
   });
   // eslint-disable-next-line operator-linebreak
   const percentCompleted =
-<span class="cstat-no" title="statement not covered" >    percentComplete !== undefined &amp;&amp; percentComplete !== null</span>
-      ? `${percentComplete}%`
+    percentComplete !== undefined &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >percentComplete !== null</span>
+      ? <span class="branch-0 cbranch-no" title="branch not covered" >`${percentComplete}%`</span>
       : "30%";
-  const InnerDiv = <span class="cstat-no" title="statement not covered" >styled("div")({</span>
+  const InnerDiv = styled("div")({
     width: percentCompleted,
     height: "15px",
     margin: 0,
     padding: 0,
     backgroundColor: "#E1ECFC",
   });
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;StyledDiv&gt;
       &lt;InnerDiv /&gt;
     &lt;/StyledDiv&gt;
@@ -175,7 +175,7 @@ export default ProgressBar;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Mar 01 2022 23:55:01 GMT+0530 (India Standard Time)
+                at Wed Mar 02 2022 09:42:51 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Header/index.test.tsx">
+    <testCase name="should Display Navbar" duration="129"/>
+  </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/atoms/Avatar/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="59"/>
+    <testCase name="Unit Test - Avatar" duration="79"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookCard/index.test.tsx">
-    <testCase name="Unit Test - Book Card" duration="302"/>
+    <testCase name="Unit Test - Book Card" duration="434"/>
   </file>
-  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Header/index.test.tsx">
-    <testCase name="should Display Navbar" duration="86"/>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Banner/index.test.tsx">
+    <testCase name="should Render Banner" duration="105"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/Footer/index.test.tsx">
+    <testCase name="&lt;Footer&gt; check if it is present" duration="129"/>
+    <testCase name="&lt;Footer&gt; check if it is truthy" duration="29"/>
   </file>
   <file path="/home/sreejan/Desktop/React/my-app/src/_components/organisms/BookDetails/index.test.tsx">
-    <testCase name="should display Book Details" duration="316"/>
+    <testCase name="should display Book Details" duration="313"/>
+  </file>
+  <file path="/home/sreejan/Desktop/React/my-app/src/App.test.tsx">
+    <testCase name="should Display App" duration="528"/>
   </file>
 </testExecutions>

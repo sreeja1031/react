@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">63.15% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/19</span>
+                <span class='fraction'>12/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">63.63% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>7/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">45.45% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>5/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">61.11% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/18</span>
+                <span class='fraction'>11/18</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -169,29 +169,29 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -249,41 +249,41 @@ interface BookType {
   id?: string;
 }
 &nbsp;
-const TabPanel: React.FC&lt;TabPanelProps&gt; = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span> value }) =&gt; {</span>
-  const AddToFinish = <span class="cstat-no" title="statement not covered" >useSelector(<span class="fstat-no" title="function not covered" >(s</span>tate: RootStateOrAny) =&gt; <span class="cstat-no" title="statement not covered" >state.AddToFinish)</span>;</span>
-  const landingBooks = <span class="cstat-no" title="statement not covered" >require("../../../../db.json");</span>
-  const books: BookType[] = <span class="cstat-no" title="statement not covered" >landingBooks.landingBooks;</span>
-<span class="cstat-no" title="statement not covered" >  console.log(books);</span>
-  const [finishedBooks, setFinishedBooks] = <span class="cstat-no" title="statement not covered" >useState&lt;BookType[]&gt;();</span>
-<span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-    async function <span class="fstat-no" title="function not covered" >getData(</span>) {
-      const booksFromServer = <span class="cstat-no" title="statement not covered" >await axios</span>
+const TabPanel: React.FC&lt;TabPanelProps&gt; = ({ value }) =&gt; {
+  const AddToFinish = useSelector((state: RootStateOrAny) =&gt; state.AddToFinish);
+  const landingBooks = require("../../../../db.json");
+  const books: BookType[] = landingBooks.landingBooks;
+  console.log(books);
+  const [finishedBooks, setFinishedBooks] = useState&lt;BookType[]&gt;();
+  useEffect(() =&gt; {
+    async function getData() {
+      const booksFromServer = await axios
         .get("http://localhost:3006/finished")
         .then(<span class="fstat-no" title="function not covered" >(r</span>esponse: { data: any }) =&gt; <span class="cstat-no" title="statement not covered" >response.data)</span>;
 <span class="cstat-no" title="statement not covered" >      return booksFromServer as BookType[];</span>
     }
-<span class="cstat-no" title="statement not covered" >    getData()</span>
+    getData()
       .then(<span class="fstat-no" title="function not covered" >(r</span>es) =&gt; <span class="cstat-no" title="statement not covered" >setFinishedBooks(res))</span>
       .catch(<span class="fstat-no" title="function not covered" >(r</span>eject) =&gt; <span class="cstat-no" title="statement not covered" >console.log(reject))</span>;
   });
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;&gt;
-      &lt;Box display={value === 0 ? "block" : "none"}&gt;
+      &lt;Box display={value === 0 ? "block" : <span class="branch-1 cbranch-no" title="branch not covered" >"none"}</span>&gt;
         &lt;Grid container&gt;
-          {books.map(<span class="fstat-no" title="function not covered" >(b</span>ook) =&gt; (
-<span class="cstat-no" title="statement not covered" >            &lt;Grid item xs={3.2} margin="25px 0px 0px 0px"&gt;</span>
+          {books.map((book) =&gt; (
+            &lt;Grid item xs={3.2} margin="25px 0px 0px 0px"&gt;
               &lt;BookCard {...book} onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >null}</span> /&gt;
             &lt;/Grid&gt;
           ))}
         &lt;/Grid&gt;
       &lt;/Box&gt;
       &lt;Box
-        display={value === 1 ? "block" : "none"}
-        marginBottom={value === 1 ? "20%" : "0"}
+        display={value === 1 ? <span class="branch-0 cbranch-no" title="branch not covered" >"block" </span>: "none"}
+        marginBottom={value === 1 ? <span class="branch-0 cbranch-no" title="branch not covered" >"20%" </span>: "0"}
       &gt;
         &lt;Grid container sx={{ marginTop: "10%" }}&gt;
           {AddToFinish &amp;&amp; finishedBooks !== null &amp;&amp; finishedBooks !== undefined
-            ? finishedBooks.map(<span class="fstat-no" title="function not covered" >(b</span>ook) =&gt; (
+            ? <span class="branch-0 cbranch-no" title="branch not covered" >finishedBooks.map(<span class="fstat-no" title="function not covered" >(b</span>ook) =&gt; (</span>
 <span class="cstat-no" title="statement not covered" >                &lt;BookCard</span>
                   title={book.title}
                   owned={book.owned}
@@ -310,7 +310,7 @@ export default TabPanel;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Mar 01 2022 23:55:01 GMT+0530 (India Standard Time)
+                at Wed Mar 02 2022 09:42:51 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

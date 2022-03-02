@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -164,13 +164,17 @@
 <a name='L99'></a><a href='#L99'>99</a>
 <a name='L100'></a><a href='#L100'>100</a>
 <a name='L101'></a><a href='#L101'>101</a>
-<a name='L102'></a><a href='#L102'>102</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -182,8 +186,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -208,7 +212,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -240,16 +244,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -271,7 +279,7 @@ import { Container, Box, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import Image from "../../atoms/Image";
 &nbsp;
-const useStyles = <span class="cstat-no" title="statement not covered" >makeStyles({</span>
+const useStyles = makeStyles({
   footerCopyRight: {
     fontStyle: "normal",
     fontSize: 14,
@@ -282,9 +290,9 @@ const useStyles = <span class="cstat-no" title="statement not covered" >makeStyl
   },
 });
 &nbsp;
-function <span class="fstat-no" title="function not covered" >FooterComponent(</span>props: any) {
-  const classes = <span class="cstat-no" title="statement not covered" >useStyles();</span>
-  const data = <span class="cstat-no" title="statement not covered" >[</span>
+function FooterComponent(props: any) {
+  const classes = useStyles();
+  const data = [
     {
       heading: "Editorial",
       topics: [
@@ -309,8 +317,12 @@ function <span class="fstat-no" title="function not covered" >FooterComponent(</
       topics: ["About", "Carrer", "partners", "Code of Conduct"],
     },
   ];
-<span class="cstat-no" title="statement not covered" >  return (</span>
-    &lt;Box {...props} sx={{ backgroundColor: "#F1F6F4", padding: "38px 244px" }}&gt;
+  return (
+    &lt;Box
+      {...props}
+      sx={{ backgroundColor: "#F1F6F4", padding: "38px 244px" }}
+      data-testid="footer"
+    &gt;
       &lt;Container sx={{ display: "flex", justifyContent: "space-between" }}&gt;
         &lt;Box&gt;
           &lt;Image
@@ -340,8 +352,8 @@ function <span class="fstat-no" title="function not covered" >FooterComponent(</
           &lt;/Typography&gt;
         &lt;/Box&gt;
         &lt;Box sx={{ display: "flex", justifyItems: "center" }}&gt;
-          {data.map(<span class="fstat-no" title="function not covered" >(p</span>ost) =&gt; (
-<span class="cstat-no" title="statement not covered" >            &lt;Box</span>
+          {data.map((post) =&gt; (
+            &lt;Box
               sx={{
                 margin: "0px 20px",
               }}
@@ -349,8 +361,8 @@ function <span class="fstat-no" title="function not covered" >FooterComponent(</
               &lt;Typography pb={2} sx={{ fontWeight: "bold" }}&gt;
                 {post.heading}
               &lt;/Typography&gt;
-              {post.topics.map(<span class="fstat-no" title="function not covered" >(c</span>urrentTopic) =&gt; (
-<span class="cstat-no" title="statement not covered" >                &lt;Typography pb={2} sx={{ color: "#6D787E" }}&gt;</span>
+              {post.topics.map((currentTopic) =&gt; (
+                &lt;Typography pb={2} sx={{ color: "#6D787E" }}&gt;
                   {currentTopic}
                 &lt;/Typography&gt;
               ))}
@@ -373,7 +385,7 @@ export default FooterComponent;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Mar 01 2022 23:55:01 GMT+0530 (India Standard Time)
+                at Wed Mar 02 2022 09:42:51 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

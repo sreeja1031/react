@@ -43,7 +43,11 @@ function FooterComponent(props: any) {
     },
   ];
   return (
-    <Box {...props} sx={{ backgroundColor: "#F1F6F4", padding: "38px 244px" }}>
+    <Box
+      {...props}
+      sx={{ backgroundColor: "#F1F6F4", padding: "38px 244px" }}
+      data-testid="footer"
+    >
       <Container sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box>
           <Image
